@@ -1,0 +1,51 @@
+:root{
+    --color_fondo : #17BEBB;
+    --color_titulo: #CD5334;
+}
+.clase_parrafo{
+    color: red;
+}
+#id_parrafo{
+    color: aquamarine;
+}
+p{
+    color: blueviolet;
+}
+.titulo_con_sombras{
+    text-shadow: 5px 5px 5px var(--color_titulo);
+}
+.parrafo_con_line_height{
+    line-height: 12px;
+}
+.parrafo_con_letter_spacing{
+    letter-spacing: 5px;
+}
+.blockquote_estilado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tarjeta{
+    background-color: #CD5334;
+    border-radius: 10px;
+    color: #2E282A;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 20px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+    margin: 3px;
+    border: solid 5px var(--color_fondo);
+}
+.tarjeta p{
+    color: #EDB88B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* La diferencia entre el context-box y el border-box es que uno respeta el tamaño asignado al elemento (border-box) mientras que el otro no lo respeta del todo, debido a que tambien suma el tamaño de los bordes y el padding (content-box)*/
+div:not(.tarjeta){
+    background-color: #FAD8D6;
+    border: solid 4px #EDB88B;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px #17BEBB;
+    color: #2E282A;
+    text-align: center;
+}

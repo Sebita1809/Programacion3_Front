@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad numero 3</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre_usuario">Nombre Completo</label> <br>
+            <input type="text" name="Nombre" required placeholder="Ej: Juan Molina"> <br>
+            <label for="email_usuario">Correo electrónico</label> <br>
+            <input type="email" name="Email" required placeholder="Ej: juancito@example.com"> <br>
+            <label for="password_usuario">Contraseña</label> <br>
+            <input type="password" name="Password" required placeholder="Minimo 8 caracteres">
+            <legend>Seleccione su genero</legend>
+            <label for="genero_femenino">Femenino</label>
+            <input type="radio" name="Genero">
+            <label for="genero_masculino">Masculino</label>
+            <input type="radio" name="Genero">
+            <label for="genero_otro">Otro</label>
+            <input type="radio" name="Genero">
+            <legend>Seleccione su pais de origen</legend>
+            <select name="Pais">
+                <option value="" selected>----</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Otros">Otros</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Informacion extra</legend>
+            <legend>Seleccione cual de las siguientes opciones es de su interes</legend>
+            <label for="Intereses">Videojuegos</label>
+            <input type="checkbox"> <br>
+            <label for="Intereses">Peliculas / series</label>
+            <input type="checkbox"> <br>
+            <label for="Intereses">Deportes</label>
+            <input type="checkbox"> <br>
+            <label for="Comentarios">Puedes agregar comentarios a continuacion</label> <br>
+            <input type="textarea" placeholder="Ej: Hablando de videojuegos, suelo jugar a League of Legends...">
+        </fieldset>
+            <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
