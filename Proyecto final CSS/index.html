@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Proyecto Final CSS</title>
+</head>
+<body>
+    <header>
+        <div class="site-header__group">
+            <a href="#top" class="site-header__logo" aria-label="Inicio">
+                <span class="site-header__mark" aria-hidden="true">M</span>
+            </a>
+            <a href="#top">
+                <span>MiTienda</span>
+            </a>
+        </div>
+        <nav>
+            <a href="#Novedades"><ul>Novedades</ul></a>
+            <a href="#Ofertas"><ul>Ofertas</ul></a>
+            <a href="#Contacto"><ul>Contacto</ul></a>
+        </nav>
+        <img src="menu-deep.png" alt="menu desplegable" class="menu-deep">
+    </header>
+    <main>
+        <section class="seccion_botones">
+            <h2>1) Sistema de Botones</h2>
+            <div class="btn-group">
+                <button class="btn--primary">Primario</button>
+                <button class="btn--secondary">Secundario</button>
+                <button class="btn--outline">Outline</button>
+                <button class="btn--danger">Peligro</button>
+                <button class="btn--icon"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>Con icono</button>
+                <button class="btn--disable"> Deshabilitado</button>
+            </div>
+        </section>
+        <section class="seccion_producto">
+            <h2>2) Tarjeta de Producto</h2>
+            <article class="product-card">
+                <p class="product-card__badge">Nuevo</p>
+                <img src="zapatillas.webp" alt="Zapatilla Nike" class="product-car__media">
+                <div class="product-information">
+                    <h3>Zapatillas Runner Pro</h3>
+                    <p class="product-information__description">Amortiguación ligera, malla respirable y suela antidelizante. Perfectas para entrenar todos los dias</p>
+                    <div class="product-price">
+                        <p class="product-price__actual">$24.900</p>
+                        <p class="product-price__old">$29.000</p>
+                    </div>
+                    <div class="product-buttons">
+                        <button class="btn--primary">Comprar ahora</button>
+                        <button class="btn--outline"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" /><path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" /><path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" /><path d="M8.56 20.31a9 9 0 0 0 3.44 .69" /><path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" /><path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" /><path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" /><path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" /><path d="M9 12h6" /><path d="M12 9v6" /></svg> Añadir</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="container" id="Novedades">
+            <section class="panel">
+                <h2>Novedades</h2>
+                <p class="code-note">Sección de relleno para probar el manpu.</p>
+            </section>
+        </div>
+        <div class="container" id="Ofertas">
+            <section class="panel">
+                <h2>Ofertas</h2>
+                <p class="code-note">Otra sección de relleno.</p>
+            </section>
+        </div>
+        <div class="container" id="Contacto">
+            <section class="panel">
+                <h2>Contacto</h2>
+                <p class="code-note">Más contenido de ejemplo.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
